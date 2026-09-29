@@ -7,17 +7,25 @@
   setHeader();
   window.addEventListener('scroll', setHeader, { passive: true });
 
-  menuButton?.addEventListener('click', () => {
-    const open = menu?.classList.toggle('is-open');
-    menuButton.setAttribute('aria-expanded', String(Boolean(open)));
+  const menuScrim = document.createElement('button');
+  menuScrim.className = 'menu-scrim';
+  menuScrim.type = 'button';
+  menuScrim.setAttribute('aria-label', 'Menü schließen');
+  document.body.append(menuScrim);
+
+  const setMenu = (open) => {
+    menu?.classList.toggle('is-open', open);
+    document.body.classList.toggle('menu-open', open);
+    menuButton?.setAttribute('aria-expanded', String(open));
+  };
+
+  menuButton?.addEventListener('click', () => setMenu(!menu?.classList.contains('is-open')));
+  menuScrim.addEventListener('click', () => setMenu(false));
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') setMenu(false);
   });
 
-  menu?.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      menu.classList.remove('is-open');
-      menuButton?.setAttribute('aria-expanded', 'false');
-    });
-  });
+  menu?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => setMenu(false)));
 
   const filters = [...document.querySelectorAll('[data-filter]')];
   const cards = [...document.querySelectorAll('[data-category]')];
