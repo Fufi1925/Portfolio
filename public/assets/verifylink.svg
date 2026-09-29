@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="t d">
+<title id="t">VerifyLink project graphic</title><desc id="d">A secure verification link between a game server and a community chat.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eff6ff"/><stop offset="1" stop-color="#faf5ff"/></linearGradient><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2563eb"/><stop offset="1" stop-color="#7c3aed"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#1e1b4b" flood-opacity=".14"/></filter></defs>
+<rect width="1200" height="760" rx="48" fill="url(#bg)"/><circle cx="116" cy="118" r="190" fill="#dbeafe"/><circle cx="1080" cy="665" r="240" fill="#ede9fe"/>
+<g filter="url(#s)"><rect x="120" y="220" width="320" height="320" rx="56" fill="#fff"/><rect x="760" y="220" width="320" height="320" rx="56" fill="#fff"/></g>
+<g fill="#16a34a"><rect x="193" y="298" width="70" height="70"/><rect x="263" y="368" width="70" height="70"/><rect x="333" y="298" width="34" height="140"/></g><path d="M196 452h171" stroke="#86efac" stroke-width="18" stroke-linecap="round"/>
+<g transform="translate(825 294)" fill="url(#g)"><path d="M62 16c-39 0-69 18-83 50-8 20-8 41-2 60 17 42 58 67 104 67 10 0 20-1 29-4l28 18-8-34c27-17 45-45 45-77 0-44-42-80-93-80H62Z"/><circle cx="25" cy="102" r="10" fill="#fff"/><circle cx="75" cy="102" r="10" fill="#fff"/><circle cx="125" cy="102" r="10" fill="#fff"/></g>
+<path d="M454 380h292" stroke="#a5b4fc" stroke-width="16" stroke-linecap="round" stroke-dasharray="2 30"/><g filter="url(#s)"><circle cx="600" cy="380" r="88" fill="url(#g)"/></g><path d="M562 378l27 28 53-58" fill="none" stroke="#fff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
