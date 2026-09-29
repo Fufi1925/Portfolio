@@ -341,7 +341,7 @@ button { font: inherit; }
 @media (max-width: 700px) {
   .nav { background: linear-gradient(135deg,rgba(255,255,255,.77),rgba(255,255,255,.58)); backdrop-filter: blur(24px) saturate(175%); }
   .nav-links { background: rgba(255,255,255,.74); backdrop-filter: blur(28px) saturate(175%); border-color: rgba(255,255,255,.8); }
-  .page-hero { padding: 140px 0 72px; }
+  .page-hero { padding: 155px 0 72px; }
   .page-hero-copy h1 { font-size: 48px; }
   .page-hero-copy > p:last-child { font-size: 16px; }
   .pricing-grid { grid-template-columns: 1fr; }

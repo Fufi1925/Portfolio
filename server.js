@@ -36,7 +36,9 @@ function sendFile(res, filePath, status = 200) {
   const headers = {
     ...securityHeaders(),
     'Content-Type': contentTypes[extension] || 'application/octet-stream',
-    'Cache-Control': extension === '.html' ? 'no-cache' : 'public, max-age=604800, immutable',
+    'Cache-Control': ['.html', '.css', '.js', '.json'].includes(extension)
+      ? 'no-cache, must-revalidate'
+      : 'public, max-age=604800, immutable',
   };
   const stream = fs.createReadStream(filePath);
   stream.on('error', () => {
