@@ -1,235 +1,204 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="de">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f8fa">
-  <meta name="description" content="Ausgewählte Apps, Bots und Plattformen von Fufi – von Discord-Systemen bis zu mobilen Tools.">
-  <meta property="og:title" content="Fufi — Portfolio">
-  <meta property="og:description" content="Produktorientierte Software: Bots, Dashboards, mobile Apps und Automatisierung.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="/assets/university-bot-live.jpg">
-  <title>Fufi — Portfolio</title>
-  <link rel="icon" href="/assets/university-bot-icon.png">
-  <link rel="stylesheet" href="/styles.css">
-  <script src="/app.js" defer></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#f7f8fa" name="theme-color"/>
+<meta content="Ausgewählte Apps, Bots und Plattformen von Fufi – von Discord-Systemen bis zu mobilen Tools." name="description"/>
+<meta content="Fufi — Portfolio" property="og:title"/>
+<meta content="Produktorientierte Software: Bots, Dashboards, mobile Apps und Automatisierung." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="/assets/university-bot-live.jpg" property="og:image"/>
+<title>Fufi — Portfolio</title>
+<link href="/assets/university-bot-icon.png" rel="icon"/>
+<link href="/styles.css" rel="stylesheet"/>
+<script defer="" src="/app.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Zum Inhalt springen</a>
-
-  <header class="site-header" data-header>
-    <nav class="nav shell" aria-label="Hauptnavigation">
-      <a class="brand" href="#top" aria-label="Fufi Portfolio Startseite">
-        <span class="brand-mark" aria-hidden="true">F</span>
-        <span>Fufi</span>
-      </a>
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links" data-menu-button>
-        <span class="sr-only">Menü öffnen</span><span></span><span></span>
-      </button>
-      <div class="nav-links" id="nav-links" data-menu>
-        <a href="#projects">Projekte</a>
-        <a href="#capabilities">Skills</a>
-        <a href="#about">Über mich</a>
-        <a class="nav-cta" href="https://github.com/Fufi1925" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-      </div>
-    </nav>
-  </header>
-
-  <main id="main">
-    <section class="hero shell" id="top">
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span class="status-dot"></span> Ausgewählte Arbeit · 2026</p>
-        <h1>Ich baue Software,<br><span>die wirklich benutzt wird.</span></h1>
-        <p class="hero-lead">Bots, Dashboards und mobile Apps — von der ersten Idee bis zum laufenden Produkt. Klar gestaltet, technisch durchdacht und mit Fokus auf echte Nutzer.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#projects">Projekte ansehen <span aria-hidden="true">↓</span></a>
-          <a class="button secondary" href="https://github.com/Fufi1925" target="_blank" rel="noreferrer">GitHub-Profil <span aria-hidden="true">↗</span></a>
-        </div>
-        <dl class="hero-stats" aria-label="Portfolio in Zahlen">
-          <div><dt>08</dt><dd>ausgewählte Projekte</dd></div>
-          <div><dt>07</dt><dd>Technologien & Sprachen</dd></div>
-          <div><dt>02</dt><dd>verifizierte Live-Produkte</dd></div>
-        </dl>
-      </div>
-
-      <div class="hero-visual reveal" aria-label="University Bot Projektvorschau">
-        <div class="hero-image-wrap">
-          <img src="/assets/university-bot-live.jpg" alt="Weltraum-Motiv der University-Bot-Website" width="1376" height="768">
-          <div class="hero-image-overlay"></div>
-          <div class="hero-project-label">
-            <img src="/assets/university-bot-icon.png" alt="" width="56" height="56">
-            <div><span>Featured project</span><strong>University Bot</strong></div>
-            <a href="https://universtiy-bot.up.railway.app/" target="_blank" rel="noreferrer" aria-label="University Bot live öffnen">↗</a>
-          </div>
-        </div>
-        <div class="floating-chip chip-code"><span></span> FastAPI + Next.js</div>
-        <div class="floating-chip chip-live"><i></i> Live</div>
-      </div>
-    </section>
-
-    <section class="marquee" aria-label="Technologien">
-      <div class="marquee-track">
-        <span>Python</span><i></i><span>TypeScript</span><i></i><span>Next.js</span><i></i><span>FastAPI</span><i></i><span>Kotlin</span><i></i><span>Swift</span><i></i><span>Flutter</span><i></i><span>Railway</span><i></i>
-        <span aria-hidden="true">Python</span><i aria-hidden="true"></i><span aria-hidden="true">TypeScript</span><i aria-hidden="true"></i><span aria-hidden="true">Next.js</span><i aria-hidden="true"></i><span aria-hidden="true">FastAPI</span><i aria-hidden="true"></i><span aria-hidden="true">Kotlin</span><i aria-hidden="true"></i><span aria-hidden="true">Swift</span><i aria-hidden="true"></i><span aria-hidden="true">Flutter</span><i aria-hidden="true"></i><span aria-hidden="true">Railway</span><i aria-hidden="true"></i>
-      </div>
-    </section>
-
-    <section class="projects-section shell" id="projects">
-      <div class="section-heading reveal">
-        <div><p class="eyebrow">Selected work</p><h2>Projekte mit Substanz.</h2></div>
-        <p>Eine kuratierte Auswahl. Keine leeren Repositories, keine Duplikate — nur Projekte, die eine klare Idee und sichtbare Umsetzung zeigen.</p>
-      </div>
-
-      <div class="filters reveal" role="group" aria-label="Projekte filtern">
-        <button class="filter is-active" type="button" data-filter="all">Alle</button>
-        <button class="filter" type="button" data-filter="platform">Plattformen</button>
-        <button class="filter" type="button" data-filter="mobile">Mobile</button>
-        <button class="filter" type="button" data-filter="tool">Tools</button>
-      </div>
-
-      <div class="project-grid">
-        <article class="project-card project-featured reveal" data-category="platform">
-          <a class="project-media media-university" href="https://universtiy-bot.up.railway.app/" target="_blank" rel="noreferrer" aria-label="University Bot live ansehen">
-            <img src="/assets/university-bot-live.jpg" alt="Weltraum-Hintergrund der live laufenden University-Bot-Website" width="1376" height="768" loading="lazy">
-            <span class="live-badge"><i></i> Live geprüft</span>
-          </a>
-          <div class="project-body">
-            <div class="project-index">01</div>
-            <div class="project-content">
-              <div class="project-topline"><p>Discord platform</p><span>2026</span></div>
-              <h3>University Bot</h3>
-              <p>Ein komplettes Discord-System mit Bot, FastAPI-Backend, Next.js-Dashboard, Serververwaltung, Sicherheit, Tickets und Automationen.</p>
-              <ul class="tags"><li>Python</li><li>Next.js</li><li>FastAPI</li><li>Railway</li></ul>
-              <div class="project-links">
-                <a href="https://universtiy-bot.up.railway.app/" target="_blank" rel="noreferrer">Live Website <span>↗</span></a>
-                <a href="https://github.com/Fufi1925/Oskar-Bot" target="_blank" rel="noreferrer">Repository <span>↗</span></a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card project-featured reveal" data-category="mobile tool">
-          <a class="project-media media-fusch" href="https://fusch.up.railway.app/" target="_blank" rel="noreferrer" aria-label="Fusch live ansehen">
-            <div class="phone-frame"><img src="/assets/fusch-live.webp" alt="Fusch-App mit Karte und ausgewähltem Standort in Duisburg" width="824" height="1830" loading="lazy"></div>
-            <div class="map-orbit orbit-one"></div><div class="map-orbit orbit-two"></div>
-            <span class="live-badge"><i></i> Live geprüft</span>
-          </a>
-          <div class="project-body">
-            <div class="project-index">02</div>
-            <div class="project-content">
-              <div class="project-topline"><p>Android utility</p><span>2026</span></div>
-              <h3>Fusch</h3>
-              <p>Eine Android-App für Standorttests mit Karten, Routen, Favoriten, Verlauf und einem sorgfältig dokumentierten Release- und Signaturprozess.</p>
-              <ul class="tags"><li>Java</li><li>Android</li><li>Leaflet</li><li>Node.js</li></ul>
-              <div class="project-links">
-                <a href="https://fusch.up.railway.app/" target="_blank" rel="noreferrer">Live Website <span>↗</span></a>
-                <a href="https://github.com/Fufi1925/Fusch" target="_blank" rel="noreferrer">Repository <span>↗</span></a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card reveal" data-category="platform tool">
-          <div class="project-media media-soft"><img src="/assets/architect.svg" alt="Illustration einer verbundenen Serverarchitektur" width="1200" height="760" loading="lazy"></div>
-          <div class="project-body"><div class="project-index">03</div><div class="project-content">
-            <div class="project-topline"><p>Server automation</p><span>Open source</span></div>
-            <h3>Discord Architect</h3>
-            <p>Erstellt vollständige Discord-Server aus zehn strukturierten Vorlagen — mit Builder, Regelwerk, UI und umfangreicher Testsuite.</p>
-            <ul class="tags"><li>Python</li><li>Components V2</li><li>Pytest</li><li>Docker</li></ul>
-            <div class="project-links"><a href="https://github.com/Fufi1925/University-Template" target="_blank" rel="noreferrer">Repository <span>↗</span></a></div>
-          </div></div>
-        </article>
-
-        <article class="project-card reveal" data-category="mobile platform">
-          <div class="project-media media-logo media-fufcord"><span class="glow glow-blue"></span><img src="/assets/fufcord-icon.png" alt="Fufcord App-Icon mit weißem Blitz" width="512" height="512" loading="lazy"><span class="private-badge">Private build</span></div>
-          <div class="project-body"><div class="project-index">04</div><div class="project-content">
-            <div class="project-topline"><p>Cross-platform app</p><span>Android · iOS</span></div>
-            <h3>Fufcord</h3>
-            <p>Eine plattformübergreifende Rich-Presence-App mit Onboarding, Presets, Live-Vorschau und nativen Builds für Android und iOS.</p>
-            <ul class="tags"><li>Kotlin</li><li>Swift</li><li>Python</li><li>CI/CD</li></ul>
-            <div class="project-links"><span class="link-muted">Quellcode privat</span></div>
-          </div></div>
-        </article>
-
-        <article class="project-card reveal" data-category="mobile tool">
-          <div class="project-media media-soft"><img src="/assets/eforge.svg" alt="Illustration einer E-Scooter-App mit Bluetooth-Verbindung" width="1200" height="760" loading="lazy"><span class="private-badge">Private prototype</span></div>
-          <div class="project-body"><div class="project-index">05</div><div class="project-content">
-            <div class="project-topline"><p>Mobility prototype</p><span>Flutter</span></div>
-            <h3>E-Scooter Companion</h3>
-            <p>Ein Flutter-Konzept für BLE-Telemetrie, Fahrdaten, Karten und Profile — entwickelt für Forschung, Tests und private Umgebungen.</p>
-            <ul class="tags"><li>Dart</li><li>Flutter</li><li>BLE</li><li>Riverpod</li></ul>
-            <div class="project-links"><span class="link-muted">Quellcode privat</span></div>
-          </div></div>
-        </article>
-
-        <article class="project-card reveal" data-category="platform">
-          <div class="project-media media-logo media-modforge"><span class="glow glow-green"></span><img src="/assets/modforge-icon.webp" alt="ModForge-Symbol: grünes Sicherheitsschild" width="245" height="245" loading="lazy"></div>
-          <div class="project-body"><div class="project-index">06</div><div class="project-content">
-            <div class="project-topline"><p>Moderation platform</p><span>Full stack</span></div>
-            <h3>ModForge</h3>
-            <p>Discord-Moderation mit Web-Dashboard, Rollen, Fällen, Tickets, Persistenz und automatisierten Sicherheitstests.</p>
-            <ul class="tags"><li>JavaScript</li><li>Express</li><li>Discord</li><li>Docker</li></ul>
-            <div class="project-links"><a href="https://github.com/Fufi1925/Mod-Forge" target="_blank" rel="noreferrer">Repository <span>↗</span></a></div>
-          </div></div>
-        </article>
-
-        <article class="project-card reveal" data-category="tool">
-          <div class="project-media media-soft"><img src="/assets/spotify-lyrics.svg" alt="Illustration synchronisierter Songtexte und einer Audiowelle" width="1200" height="760" loading="lazy"></div>
-          <div class="project-body"><div class="project-index">07</div><div class="project-content">
-            <div class="project-topline"><p>Desktop utility</p><span>Windows</span></div>
-            <h3>Lyrics Status</h3>
-            <p>Liest laufende Musik über Windows SMTC, synchronisiert Lyrics zeitgenau und zeigt den aktuellen Abschnitt als Status.</p>
-            <ul class="tags"><li>Node.js</li><li>SMTC</li><li>LRCLIB</li><li>Windows</li></ul>
-            <div class="project-links"><a href="https://github.com/Fufi1925/discord-spotify-live_status" target="_blank" rel="noreferrer">Repository <span>↗</span></a><a href="https://github.com/Fufi1925/discord-spotify-live_status/releases/tag/dowlnlod" target="_blank" rel="noreferrer">Release <span>↗</span></a></div>
-          </div></div>
-        </article>
-
-        <article class="project-card reveal" data-category="platform tool">
-          <div class="project-media media-soft"><img src="/assets/verifylink.svg" alt="Illustration einer sicheren Verbindung zwischen Spielserver und Community" width="1200" height="760" loading="lazy"></div>
-          <div class="project-body"><div class="project-index">08</div><div class="project-content">
-            <div class="project-topline"><p>Verification service</p><span>API-first</span></div>
-            <h3>VerifyLink</h3>
-            <p>Verbindet Minecraft und Discord über kurzlebige Codes und eine klar getrennte REST-Schnittstelle — ohne direkten Datenbankzugriff des Bots.</p>
-            <ul class="tags"><li>Python</li><li>REST API</li><li>Discord</li><li>Docker</li></ul>
-            <div class="project-links"><a href="https://github.com/Fufi1925/Aioverify" target="_blank" rel="noreferrer">Repository <span>↗</span></a></div>
-          </div></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="capabilities shell" id="capabilities">
-      <div class="section-heading reveal"><div><p class="eyebrow">Capabilities</p><h2>Von der Idee bis live.</h2></div><p>Mein Fokus liegt nicht nur auf Code. Ich verbinde Produktidee, Oberfläche, Backend und Deployment zu einem funktionierenden Ganzen.</p></div>
-      <div class="capability-grid">
-        <article class="capability reveal"><span>01</span><div class="capability-icon">⌘</div><h3>Backend & APIs</h3><p>Python, FastAPI, Node.js, Authentifizierung, Datenmodelle und saubere Schnittstellen.</p></article>
-        <article class="capability reveal"><span>02</span><div class="capability-icon">◇</div><h3>Product UI</h3><p>Responsive Dashboards, klare Nutzerflüsse und Oberflächen, die komplexe Systeme einfach machen.</p></article>
-        <article class="capability reveal"><span>03</span><div class="capability-icon">↗</div><h3>Mobile</h3><p>Native Android-/iOS-Arbeit und Flutter-Prototypen mit Gerätefunktionen und lokalen Daten.</p></article>
-        <article class="capability reveal"><span>04</span><div class="capability-icon">◎</div><h3>Deploy & Iterate</h3><p>Railway, Docker, GitHub Actions, Releases, Tests und dokumentierte Updatepfade.</p></article>
-      </div>
-    </section>
-
-    <section class="about shell" id="about">
-      <div class="about-card reveal">
-        <div class="about-monogram" aria-hidden="true"><span>F</span></div>
-        <div class="about-copy">
-          <p class="eyebrow">Über mich</p>
-          <h2>Neugierig auf das ganze System — nicht nur auf eine Datei.</h2>
-          <p>Ich bin Fufi und entwickle Software rund um Communities, Automatisierung und mobile Werkzeuge. Mich interessiert der vollständige Weg: Problem verstehen, Architektur planen, Oberfläche bauen, absichern und veröffentlichen.</p>
-          <p>Dieses Portfolio zeigt bewusst nur eine saubere Auswahl meiner Arbeit. Experimente, Duplikate und unfertige Repositories bleiben draußen.</p>
-          <div class="about-actions"><a class="button primary" href="https://github.com/Fufi1925" target="_blank" rel="noreferrer">Auf GitHub ansehen <span>↗</span></a><a class="text-link" href="#top">Nach oben <span>↑</span></a></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="closing shell reveal">
-      <p class="eyebrow">Build something useful</p>
-      <h2>Gute Software beginnt<br>mit einer klaren Idee.</h2>
-      <a class="button primary" href="https://github.com/Fufi1925" target="_blank" rel="noreferrer">Meine Arbeit entdecken <span>↗</span></a>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="shell footer-main"><a class="brand" href="#top"><span class="brand-mark">F</span><span>Fufi</span></a><p>Software, Systeme & Interfaces.</p><div class="footer-links"><a href="#projects">Projekte</a><a href="#about">Über mich</a><a href="https://github.com/Fufi1925" target="_blank" rel="noreferrer">GitHub ↗</a></div></div>
-    <div class="shell footer-bottom"><span>© <span data-year></span> Fufi</span><span>Keine Tracker. Keine Cookies.</span><span>Projekte nur für legitime Entwicklung, Tests und Bildung.</span></div>
-  </footer>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<header class="site-header" data-header="">
+<nav aria-label="Hauptnavigation" class="nav shell">
+<a aria-label="Fufi Portfolio Startseite" class="brand" href="#top">
+<span aria-hidden="true" class="brand-mark">F</span>
+<span>Fufi</span>
+</a>
+<button aria-controls="nav-links" aria-expanded="false" class="menu-button" data-menu-button="" type="button">
+<span class="sr-only">Menü öffnen</span><span></span><span></span>
+</button>
+<div class="nav-links" data-menu="" id="nav-links"><a href="#projects">Projekte</a><a href="#capabilities">Skills</a><a href="/Preis">Preis</a><a href="/Kontakt">Kontakt</a><a class="nav-cta" href="https://github.com/Fufi1925" rel="noreferrer" target="_blank">GitHub ↗</a></div>
+</nav>
+</header>
+<main id="main">
+<section class="hero shell" id="top">
+<div class="hero-copy reveal">
+<p class="eyebrow"><span class="status-dot"></span> Ausgewählte Arbeit · 2026</p>
+<h1>Ich baue Software,<br/><span>die wirklich benutzt wird.</span></h1>
+<p class="hero-lead">Bots, Dashboards und mobile Apps — von der ersten Idee bis zum laufenden Produkt. Klar gestaltet, technisch durchdacht und mit Fokus auf echte Nutzer.</p>
+<div class="hero-actions">
+<a class="button primary" href="#projects">Projekte ansehen <span aria-hidden="true">↓</span></a>
+<a class="button secondary" href="https://github.com/Fufi1925" rel="noreferrer" target="_blank">GitHub-Profil <span aria-hidden="true">↗</span></a>
+</div>
+<dl aria-label="Portfolio in Zahlen" class="hero-stats">
+<div><dt>08</dt><dd>ausgewählte Projekte</dd></div>
+<div><dt>07</dt><dd>Technologien &amp; Sprachen</dd></div>
+<div><dt>02</dt><dd>verifizierte Live-Produkte</dd></div>
+</dl>
+</div>
+<div aria-label="University Bot Projektvorschau" class="hero-visual reveal">
+<div class="hero-image-wrap">
+<img alt="Weltraum-Motiv der University-Bot-Website" height="768" src="/assets/university-bot-live.jpg" width="1376"/>
+<div class="hero-image-overlay"></div>
+<div class="hero-project-label">
+<img alt="" height="56" src="/assets/university-bot-icon.png" width="56"/>
+<div><span>Featured project</span><strong>University Bot</strong></div>
+<a aria-label="University Bot live öffnen" href="https://universtiy-bot.up.railway.app/" rel="noreferrer" target="_blank">↗</a>
+</div>
+</div>
+<div class="floating-chip chip-code"><span></span> FastAPI + Next.js</div>
+<div class="floating-chip chip-live"><i></i> Live</div>
+</div>
+</section>
+<section aria-label="Technologien" class="marquee">
+<div class="marquee-track">
+<span>Python</span><i></i><span>TypeScript</span><i></i><span>Next.js</span><i></i><span>FastAPI</span><i></i><span>Kotlin</span><i></i><span>Swift</span><i></i><span>Flutter</span><i></i><span>Railway</span><i></i>
+<span aria-hidden="true">Python</span><i aria-hidden="true"></i><span aria-hidden="true">TypeScript</span><i aria-hidden="true"></i><span aria-hidden="true">Next.js</span><i aria-hidden="true"></i><span aria-hidden="true">FastAPI</span><i aria-hidden="true"></i><span aria-hidden="true">Kotlin</span><i aria-hidden="true"></i><span aria-hidden="true">Swift</span><i aria-hidden="true"></i><span aria-hidden="true">Flutter</span><i aria-hidden="true"></i><span aria-hidden="true">Railway</span><i aria-hidden="true"></i>
+</div>
+</section>
+<section class="projects-section shell" id="projects">
+<div class="section-heading reveal">
+<div><p class="eyebrow">Selected work</p><h2>Projekte mit Substanz.</h2></div>
+<p>Eine kuratierte Auswahl. Keine leeren Repositories, keine Duplikate — nur Projekte, die eine klare Idee und sichtbare Umsetzung zeigen.</p>
+</div>
+<div aria-label="Projekte filtern" class="filters reveal" role="group">
+<button class="filter is-active" data-filter="all" type="button">Alle</button>
+<button class="filter" data-filter="platform" type="button">Plattformen</button>
+<button class="filter" data-filter="mobile" type="button">Mobile</button>
+<button class="filter" data-filter="tool" type="button">Tools</button>
+</div>
+<div class="project-grid"><article class="project-card project-featured reveal" data-category="platform">
+<a aria-label="University Bot live ansehen" class="project-media media-university" href="https://universtiy-bot.up.railway.app/" rel="noreferrer" target="_blank">
+<img alt="Weltraum-Hintergrund der live laufenden University-Bot-Website" height="768" loading="lazy" src="/assets/university-bot-live.jpg" width="1376"/>
+<span class="live-badge"><i></i> Live geprüft</span>
+</a>
+<div class="project-body">
+<div class="project-index">01</div>
+<div class="project-content">
+<div class="project-topline"><p>Discord platform</p><span>2026</span></div>
+<h3>University Bot</h3>
+<p>Ein komplettes Discord-System mit Bot, FastAPI-Backend, Next.js-Dashboard, Serververwaltung, Sicherheit, Tickets und Automationen.</p>
+<ul class="tags"><li>Python</li><li>Next.js</li><li>FastAPI</li><li>Railway</li></ul>
+<div class="project-links">
+<a href="https://universtiy-bot.up.railway.app/" rel="noreferrer" target="_blank">Live Website <span>↗</span></a>
+<a href="https://github.com/Fufi1925/Oskar-Bot" rel="noreferrer" target="_blank">Repository <span>↗</span></a>
+</div>
+</div>
+</div>
+</article><article class="project-card project-featured reveal" data-category="mobile tool">
+<a aria-label="Fusch live ansehen" class="project-media media-fusch" href="https://fusch.up.railway.app/" rel="noreferrer" target="_blank">
+<div class="phone-frame"><img alt="Fusch-App mit Karte und ausgewähltem Standort in Duisburg" height="1830" loading="lazy" src="/assets/fusch-live.webp" width="824"/></div>
+<div class="map-orbit orbit-one"></div><div class="map-orbit orbit-two"></div>
+<span class="live-badge"><i></i> Live geprüft</span>
+</a>
+<div class="project-body">
+<div class="project-index">02</div>
+<div class="project-content">
+<div class="project-topline"><p>Android utility</p><span>2026</span></div>
+<h3>Fusch</h3>
+<p>Eine Android-App für Standorttests mit Karten, Routen, Favoriten, Verlauf und einem sorgfältig dokumentierten Release- und Signaturprozess.</p>
+<ul class="tags"><li>Java</li><li>Android</li><li>Leaflet</li><li>Node.js</li></ul>
+<div class="project-links">
+<a href="https://fusch.up.railway.app/" rel="noreferrer" target="_blank">Live Website <span>↗</span></a>
+<a href="https://github.com/Fufi1925/Fusch" rel="noreferrer" target="_blank">Repository <span>↗</span></a>
+</div>
+</div>
+</div>
+</article><article class="project-card reveal" data-category="mobile platform">
+<div class="project-media media-logo media-fufcord"><span class="glow glow-blue"></span><img alt="Fufcord App-Icon mit weißem Blitz" height="512" loading="lazy" src="/assets/fufcord-icon.png" width="512"/><span class="private-badge">Private build</span></div>
+<div class="project-body"><div class="project-index">03</div><div class="project-content">
+<div class="project-topline"><p>Cross-platform app</p><span>Android · iOS</span></div>
+<h3>Fufcord</h3>
+<p>Eine plattformübergreifende Rich-Presence-App mit Onboarding, Presets, Live-Vorschau und nativen Builds für Android und iOS.</p>
+<ul class="tags"><li>Kotlin</li><li>Swift</li><li>Python</li><li>CI/CD</li></ul>
+<div class="project-links"><span class="link-muted">Quellcode privat</span></div>
+</div></div>
+</article><article class="project-card reveal" data-category="tool">
+<div class="project-media media-soft"><img alt="Illustration synchronisierter Songtexte und einer Audiowelle" height="760" loading="lazy" src="/assets/spotify-lyrics.svg" width="1200"/></div>
+<div class="project-body"><div class="project-index">04</div><div class="project-content">
+<div class="project-topline"><p>Desktop utility</p><span>Windows</span></div>
+<h3>Lyrics Status</h3>
+<p>Liest laufende Musik über Windows SMTC, synchronisiert Lyrics zeitgenau und zeigt den aktuellen Abschnitt als Status.</p>
+<ul class="tags"><li>Node.js</li><li>SMTC</li><li>LRCLIB</li><li>Windows</li></ul>
+<div class="project-links"><a href="https://github.com/Fufi1925/discord-spotify-live_status" rel="noreferrer" target="_blank">Repository <span>↗</span></a><a href="https://github.com/Fufi1925/discord-spotify-live_status/releases/tag/dowlnlod" rel="noreferrer" target="_blank">Release <span>↗</span></a></div>
+</div></div>
+</article><article class="project-card reveal" data-category="platform tool">
+<div class="project-media media-soft"><img alt="Illustration einer verbundenen Serverarchitektur" height="760" loading="lazy" src="/assets/architect.svg" width="1200"/></div>
+<div class="project-body"><div class="project-index">05</div><div class="project-content">
+<div class="project-topline"><p>Server automation</p><span>Open source</span></div>
+<h3>Discord Architect</h3>
+<p>Erstellt vollständige Discord-Server aus zehn strukturierten Vorlagen — mit Builder, Regelwerk, UI und umfangreicher Testsuite.</p>
+<ul class="tags"><li>Python</li><li>Components V2</li><li>Pytest</li><li>Docker</li></ul>
+<div class="project-links"><a href="https://github.com/Fufi1925/University-Template" rel="noreferrer" target="_blank">Repository <span>↗</span></a></div>
+</div></div>
+</article><article class="project-card reveal" data-category="mobile tool">
+<div class="project-media media-soft"><img alt="Illustration einer E-Scooter-App mit Bluetooth-Verbindung" height="760" loading="lazy" src="/assets/eforge.svg" width="1200"/><span class="private-badge">Private prototype</span></div>
+<div class="project-body"><div class="project-index">06</div><div class="project-content">
+<div class="project-topline"><p>Mobility prototype</p><span>Flutter</span></div>
+<h3>E-Scooter Companion</h3>
+<p>Ein Flutter-Konzept für BLE-Telemetrie, Fahrdaten, Karten und Profile — entwickelt für Forschung, Tests und private Umgebungen.</p>
+<ul class="tags"><li>Dart</li><li>Flutter</li><li>BLE</li><li>Riverpod</li></ul>
+<div class="project-links"><span class="link-muted">Quellcode privat</span></div>
+</div></div>
+</article><article class="project-card reveal" data-category="platform">
+<div class="project-media media-logo media-modforge"><span class="glow glow-green"></span><img alt="ModForge-Symbol: grünes Sicherheitsschild" height="245" loading="lazy" src="/assets/modforge-icon.webp" width="245"/></div>
+<div class="project-body"><div class="project-index">07</div><div class="project-content">
+<div class="project-topline"><p>Moderation platform</p><span>Full stack</span></div>
+<h3>ModForge</h3>
+<p>Discord-Moderation mit Web-Dashboard, Rollen, Fällen, Tickets, Persistenz und automatisierten Sicherheitstests.</p>
+<ul class="tags"><li>JavaScript</li><li>Express</li><li>Discord</li><li>Docker</li></ul>
+<div class="project-links"><a href="https://github.com/Fufi1925/Mod-Forge" rel="noreferrer" target="_blank">Repository <span>↗</span></a></div>
+</div></div>
+</article><article class="project-card reveal" data-category="platform tool">
+<div class="project-media media-soft"><img alt="Illustration einer sicheren Verbindung zwischen Spielserver und Community" height="760" loading="lazy" src="/assets/verifylink.svg" width="1200"/></div>
+<div class="project-body"><div class="project-index">08</div><div class="project-content">
+<div class="project-topline"><p>Verification service</p><span>API-first</span></div>
+<h3>VerifyLink</h3>
+<p>Verbindet Minecraft und Discord über kurzlebige Codes und eine klar getrennte REST-Schnittstelle — ohne direkten Datenbankzugriff des Bots.</p>
+<ul class="tags"><li>Python</li><li>REST API</li><li>Discord</li><li>Docker</li></ul>
+<div class="project-links"><a href="https://github.com/Fufi1925/Aioverify" rel="noreferrer" target="_blank">Repository <span>↗</span></a></div>
+</div></div>
+</article></div>
+</section>
+<section class="capabilities shell" id="capabilities">
+<div class="section-heading reveal"><div><p class="eyebrow">Capabilities</p><h2>Von der Idee bis live.</h2></div><p>Mein Fokus liegt nicht nur auf Code. Ich verbinde Produktidee, Oberfläche, Backend und Deployment zu einem funktionierenden Ganzen.</p></div>
+<div class="capability-grid">
+<article class="capability reveal"><span>01</span><div class="capability-icon">⌘</div><h3>Backend &amp; APIs</h3><p>Python, FastAPI, Node.js, Authentifizierung, Datenmodelle und saubere Schnittstellen.</p></article>
+<article class="capability reveal"><span>02</span><div class="capability-icon">◇</div><h3>Product UI</h3><p>Responsive Dashboards, klare Nutzerflüsse und Oberflächen, die komplexe Systeme einfach machen.</p></article>
+<article class="capability reveal"><span>03</span><div class="capability-icon">↗</div><h3>Mobile</h3><p>Native Android-/iOS-Arbeit und Flutter-Prototypen mit Gerätefunktionen und lokalen Daten.</p></article>
+<article class="capability reveal"><span>04</span><div class="capability-icon">◎</div><h3>Deploy &amp; Iterate</h3><p>Railway, Docker, GitHub Actions, Releases, Tests und dokumentierte Updatepfade.</p></article>
+</div>
+</section>
+<section class="about shell" id="about">
+<div class="about-card reveal">
+<div aria-hidden="true" class="about-monogram"><span>F</span></div>
+<div class="about-copy">
+<p class="eyebrow">Über mich</p>
+<h2>Neugierig auf das ganze System — nicht nur auf eine Datei.</h2>
+<p>Ich bin Fufi und entwickle Software rund um Communities, Automatisierung und mobile Werkzeuge. Mich interessiert der vollständige Weg: Problem verstehen, Architektur planen, Oberfläche bauen, absichern und veröffentlichen.</p>
+<p>Dieses Portfolio zeigt bewusst nur eine saubere Auswahl meiner Arbeit. Experimente, Duplikate und unfertige Repositories bleiben draußen.</p>
+<div class="about-actions"><a class="button primary" href="https://github.com/Fufi1925" rel="noreferrer" target="_blank">Auf GitHub ansehen <span>↗</span></a><a class="text-link" href="#top">Nach oben <span>↑</span></a></div>
+</div>
+</div>
+</section>
+<section class="closing shell reveal">
+<p class="eyebrow">Build something useful</p>
+<h2>Gute Software beginnt<br/>mit einer klaren Idee.</h2>
+<a class="button primary" href="https://github.com/Fufi1925" rel="noreferrer" target="_blank">Meine Arbeit entdecken <span>↗</span></a>
+</section>
+</main>
+<footer class="footer">
+<div class="shell footer-main"><a class="brand" href="#top"><span class="brand-mark">F</span><span>Fufi</span></a><p>Software, Systeme &amp; Interfaces.</p><div class="footer-links"><a href="#projects">Projekte</a><a href="/Preis">Preis</a><a href="/Kontakt">Kontakt</a><a href="https://github.com/Fufi1925" rel="noreferrer" target="_blank">GitHub ↗</a></div></div>
+<div class="shell footer-bottom"><span>© <span data-year=""></span> Fufi</span><span>Keine Tracker. Keine Cookies.</span><span>Projekte nur für legitime Entwicklung, Tests und Bildung.</span></div>
+</footer>
 </body>
 </html>

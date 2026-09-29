@@ -7,7 +7,10 @@ Eine schnelle, responsive Portfolio-Website für eine kuratierte Auswahl meiner 
 - University Bot und Fusch mit verifizierten Live-Links
 - Discord Architect, Fufcord, E-Scooter Companion, ModForge, Lyrics Status und VerifyLink
 - echte Projektbilder aus den jeweiligen Repositories beziehungsweise Live-Websites
-- responsive Navigation, Projektfilter und dezente Scroll-Animationen
+- responsive Glassmorphism-Navigation, Projektfilter und dezente Scroll-Animationen
+- eigene Seiten unter `/Preis` und `/Kontakt`
+- ungefähre Preisbereiche für Websites, Bots und individuelle Systeme
+- Discord als Hauptkontakt, E-Mail und GitHub als Alternativen
 - keine Tracker, Cookies, externen Fonts oder clientseitigen Abhängigkeiten
 - Security-Header und Railway-Healthcheck
 
@@ -42,6 +45,8 @@ Es werden keine Umgebungsvariablen benötigt. Der Server hört automatisch auf R
 Portfolio/
 ├── public/
 │   ├── assets/
+│   ├── Preis/index.html
+│   ├── Kontakt/index.html
 │   ├── index.html
 │   ├── styles.css
 │   ├── app.js

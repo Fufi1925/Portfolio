@@ -75,15 +75,23 @@ const server = http.createServer((req, res) => {
   }
 
   fs.stat(filePath, (error, stats) => {
-    if (!error && stats.isFile()) {
+    const resolvedFile = !error && stats.isDirectory() ? path.join(filePath, 'index.html') : filePath;
+    const deliver = () => {
       if (req.method === 'HEAD') {
-        res.writeHead(200, { ...securityHeaders(), 'Content-Type': contentTypes[path.extname(filePath).toLowerCase()] || 'application/octet-stream' });
+        res.writeHead(200, { ...securityHeaders(), 'Content-Type': contentTypes[path.extname(resolvedFile).toLowerCase()] || 'application/octet-stream' });
         return res.end();
       }
-      return sendFile(res, filePath);
+      return sendFile(res, resolvedFile);
+    };
+
+    if (!error && stats.isFile()) return deliver();
+    if (!error && stats.isDirectory()) {
+      return fs.stat(resolvedFile, (indexError, indexStats) => {
+        if (!indexError && indexStats.isFile()) return deliver();
+        return sendFile(res, path.join(PUBLIC_DIR, '404.html'), 404);
+      });
     }
-    const notFound = path.join(PUBLIC_DIR, '404.html');
-    return sendFile(res, notFound, 404);
+    return sendFile(res, path.join(PUBLIC_DIR, '404.html'), 404);
   });
 });
 
