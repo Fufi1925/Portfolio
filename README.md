@@ -5,7 +5,8 @@ Eine schnelle, responsive Portfolio-Website für eine kuratierte Auswahl meiner 
 ## Inhalt
 
 - University Bot und Fusch mit verifizierten Live-Links
-- Discord Architect, Fufcord, E-Scooter Companion, ModForge, Lyrics Status und VerifyLink
+- Discord Architect, Fufcord, **Fufitfy**, E-Scooter Companion, ModForge, Lyrics Status und VerifyLink
+- vollständige deutsche und englische Versionen für Startseite, Preise und Kontakt
 - echte Projektbilder aus den jeweiligen Repositories beziehungsweise Live-Websites
 - responsive Glassmorphism-Navigation, Projektfilter und dezente Scroll-Animationen
 - eigene Seiten unter `/Preis` und `/Kontakt`
@@ -47,6 +48,10 @@ Portfolio/
 │   ├── assets/
 │   ├── Preis/index.html
 │   ├── Kontakt/index.html
+│   ├── en/
+│   │   ├── index.html
+│   │   ├── pricing/index.html
+│   │   └── contact/index.html
 │   ├── index.html
 │   ├── styles.css
 │   ├── app.js
